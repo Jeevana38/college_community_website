@@ -1,0 +1,100 @@
+.bg-nav{
+	background: #7b4397;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #dc2430, #7b4397);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #dc2430, #7b4397); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.mt-100{
+margin-top:100px;
+}
+.mt-2{
+margin-top:2px;
+}
+.c1{
+	text-align:center;
+	color: purple;
+	font-style:bold;
+	padding:50px;
+    background: #FBD3E9;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #BB377D, #FBD3E9);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #BB377D, #FBD3E9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+}
+.c2{
+	text-align:center;
+	color:blue;
+	font-family:sans-serif,cursive;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+.contact{
+	display:block;
+	background-color:lightgrey;
+	text-align:center;
+	padding:20px;
+}
+.c3{
+
+	display:block;
+	padding:100px;
+	float:right;
+}
+.bt_style{
+background: #00C9FF;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #92FE9D, #00C9FF);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #92FE9D, #00C9FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.p1{
+  background-color:white;
+  text-align:center;
+  width:50%;height:150%;
+  padding-top:5px;padding-bottom:30px;
+  margin-left:500px;margin-top:20px;margin-right:10px;margin-bottom:10px;
+  font-style:italic;
+  color:purple;
+  font-size:150%;
+  border-radius:8px;
+  border:3px solid blue;
+}
+.p2{
+  background-color:white;
+  text-align:center;
+  width:50%;height:150%;
+  padding-top:5px;padding-bottom:40px;
+  margin-left:150px;margin-top:20px;margin-right:500px;
+  font-style:italic;
+  color:purple;
+  font-size:150%;
+  border-radius:8px;
+  border:3px solid blue;
+}
+img {
+  border-radius: 8px;
+  padding: 5px;
+  width: 200px;heigth:200px;
+  object-fit:cover;
+}
+.p3{
+  background-color:white;
+  texxt-align:center;
+  width:50%;height:150%;
+  padding-top:5px;padding-bottom:40px;
+  margin-left:500px;margin-top:30px;margin-right:500px;
+  color:black;
+
+}
+.p4{
+  background-color:white;
+  position:center;
+  width:50%;height:150%;
+  padding-top:5px;padding-bottom:30px;
+  margin-left:500px;margin-top:10px;margin-right:500px;margin-bottom:30px;
+  color:black;
+
+}
