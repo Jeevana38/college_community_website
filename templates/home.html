@@ -10,40 +10,94 @@
 </head>
 <body class="bt_style">
 <a href="/logout" class="btn btn-outline-primary" style="float:right">Logout</a>
-	<div class="c1">
-		<h1>VCE COMMUNITY NETWORK</h1>
-	</div>
-
 	<ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
   <li class="nav-item" role="presentation">
-    <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Home</button>
+    <button class="nav-link" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Home</button>
   </li>
   <li class="nav-item" role="presentation">
-    <button class="nav-link" id="pills-about-tab" data-bs-toggle="pill" data-bs-target="#pills-about" type="button" role="tab" aria-controls="pills-about" aria-selected="false">About</button>
+    <button class="nav-link" id="pills-aboutus-tab" data-bs-toggle="pill" data-bs-target="#pills-aboutus" type="button" role="tab" aria-controls="pills-aboutus" aria-selected="false">About Us</button>
   </li>
   <li class="nav-item" role="presentation">
     <button class="nav-link" id="pills-forum-tab" data-bs-toggle="pill" data-bs-target="#pills-forum" type="button" role="tab" aria-controls="pills-forum" aria-selected="false">Forum</button>
   </li>
-        <li class="nav-item" role="presentation">
-    <button class="nav-link" id="pills-contributors-tab" data-bs-toggle="pill" data-bs-target="#pills-contributors" type="button" role="tab" aria-controls="pills-contributors" aria-selected="false">Contributors</button>
-  </li>
+
 </ul>
+
 
 <div class="tab-content" id="pills-tabContent">
 
   <div class="tab-pane fade" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-   <h2 class="c2"><a href="https://www.vce.ac.in/">Vasavi College of Engineering</a></h2><br/>
+   <h1 style='text-align : center; color:white; padding:20px'>VCE COLLEGE COMMUNITY</h1>
    <img src="https://www.vce.ac.in/About/College/gallery/02.jpg" alt="VCE Ramanujan block" class="center"><br/>
-   <div class="contact">
+        <div class="contact">
    	<p>Address</p>
    	<a href="https://goo.gl/maps/AoDgc6eQNF1KbH2c9">Vasavi College of Engineering,Ibrahimbagh,Hyderabad - 500 031,Telangana,India</a><br/>
    	<a href="https://www.vce.ac.in/">For more info, click here</a>
    </div>
+
   </div>
 
-  <div class="tab-pane fade" id="pills-about" role="tabpanel" aria-labelledby="pills-about-tab">about</div>
+  <div class="tab-pane fade" id="pills-aboutus" role="tabpanel" aria-labelledby="pills-aboutus-tab">
+      <section id="about">
+    <div class="container">
+    <div class="header">
+    <h1>ABOUT US</h1>
+    </div>
+        <div class="sub-container">
+            <p class="u-text u-text-2">This website aims at connecting the students, alumni and faculty in one single platform.&nbsp;</p>
+        </div>
+    </div>
+</section>
+
+      <section id="team">
+    <div class="container">
+    <div class="header">
+        <h1>Our Team </h1>
+    </div>
+        <div class="sb-container">
+
+        <div class="teams">
+        <img src="static/images/jeevana_pic.jpg" alt="Jeevana Kalvakuntla">
+        <div class="name">Jeevana Kalvakuntla</div>
+            <div class="desig">CS Sophomore</div>
+
+        <div class="social links">
+            <a href="https://www.linkedin.com/in/jeevana-kalvakuntla/">Connect</a><br/>
+        <p>Email:1602-19-733-144@vce.ac.in</p>
+        </div>
+        </div>
+
+
+        <div class="teams">
+        <img style='image-widht :200px;image-height:200px'   src="static/images/nainica_pic.jpg" alt="Nainica Dasari">
+        <div class="name">Nainica Dasari</div>
+             <div class="desig">CS Sophomore</div>
+        <div class="social links">
+            <a href="https://www.linkedin.com/in/nainica-dasari/">Connect</a><br/>
+        <p>Email:1602-19-733-149@vce.ac.in</p>
+        </div>
+        </div>
+
+        </div>
+          <section id="web">
+    <div class="container">
+    <div class="header">
+        <h1>For More About VCE?</h1>
+    </div>
+        <div class="sub-container">
+           <a href="https://www.vce.ac.in/">Go to official website</a><br/>
+        </div>
+    </div>
+</section>
+</div>
+</section>
+  </div>
+
+
+
   <div class="tab-pane fade" id="pills-forum" role="tabpanel" aria-labelledby="pills-forum-tab">
-     <form action='/' method="post">
+      <h1 style='text-align : center; color:white; padding:20px'>DISCUSSION FORUM</h1>
+      <form action='/home' method="post">
          <input type="textanswer" placeholder="Query" name="query" required><br/><br/>
          <input type="textanswer" placeholder="Answer" name="answer"><br/><br/>
          <input type="submit" value='Add Post'><br/>
@@ -52,24 +106,7 @@
       <div class="p3">{{post[0]}}</div>
       <div class="p4">{{post[1]}}</div>
       {% endfor %}
-
   </div>
-    <div class="tab-pane fade" id="pills-contributors" role="tabpanel" aria-labelledby="pills-contributors-tab">
-        <div class="p1">
-            <img style="float:right" src="../static/images/jeevana_pic.jpg" alt="Jeevana Kalvakuntla">
-            <p>Jeevana Kalvakuntla<br/>CS Sophomore<br/>
-            <a href="https://www.linkedin.com/in/jeevana-kalvakuntla/">Connect</a><br/>
-                <p>Email:1602-19-733-144@vce.ac.in</p>
-            </p>
-        </div>
-        <div class="p2">
-
-            <p>Nainica Dasari<br/>CS Sophomore<br/>
-
-                <p>Email:1602-19-733-149@vce.ac.in</p>
-            </p>
-        </div>
-    </div>
 
 </div>
 

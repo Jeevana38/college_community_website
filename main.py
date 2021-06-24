@@ -1,7 +1,18 @@
 from flask import Flask,render_template,request,redirect,session
+from flask_mail import Mail,Message
+
 import mysql.connector
 import os
 app = Flask(__name__)
+
+app.config['MAIL_SERVER'] = "smtp.gmail.com"
+app.config['MAIL_PORT'] = 465
+app.config['MAIL_USERNAME'] = "vcecommunitynetwork@gmail.com"
+app.config['MAIL_PASSWORD'] = "vce_2023"
+app.config['MAIL_USE_TLS'] = False
+app.config['MAIL_USE_SSL'] = True
+
+mail=Mail(app)
 app.secret_key=os.urandom(24)
 conn=mysql.connector.connect(host="remotemysql.com",user="IMZ0mJ03ut",password="Ohmo8OHuAX",database="IMZ0mJ03ut")
 cursor=conn.cursor()
@@ -36,6 +47,10 @@ def add_user():
     email=request.form.get('uemail')
     password=request.form.get('upassword')
 
+    message = Message("Confirm Registration",sender="vcecommunitynetwork@gmail.com",recipients=[email])
+    message.body = "Hi "+name+"\n\nWelcome to VCE Community Network\n\nThanks\nVCE Community Team"
+    mail.send(message)
+
     cursor.execute("""INSERT INTO `users` (`user_id`,`name`,`branch`,`grad_year`,`email`,`password`) VALUES (NULL,'{}','{}','{}','{}','{}')""".format(name,branch,grad_year,email,password))
     conn.commit()
     cursor.execute(""" SELECT * FROM `users` WHERE `email` LIKE '{}' """.format(email))
@@ -46,7 +61,7 @@ def add_user():
 def logout():
     session.pop('user_id')
     return redirect('/')
-@app.route('/',methods=['GET','POST'])
+@app.route('/home',methods=['GET','POST'])
 def forum():
     if request.method == 'GET':
         pass
